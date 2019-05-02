@@ -8,10 +8,11 @@
 
 ## User Configurations
 Change the below settings in main.py
+```sh
 AWS_ACCESS_KEY_ID = 'xxxx'
 AWS_SECRET_ACCESS_KEY = 'xxxx'
 region_name = 'us-east-2'
-
+```
 ## How to run
 
 ```sh
