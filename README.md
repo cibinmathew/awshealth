@@ -1,17 +1,22 @@
 
 # AWS EC2 Get status
 
+## Requirements
+
+* python
+* docker
+
+## User Configurations
+Change the below settings in main.py
+AWS_ACCESS_KEY_ID = 'xxxx'
+AWS_SECRET_ACCESS_KEY = 'xxxx'
+region_name = 'us-east-2'
+
 ## How to run
 
 ```sh
 $ sh run.sh
 ```
-
-## Requirements
-
-* python
-
-* docker
 
 ## Alternatively
 
