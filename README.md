@@ -12,14 +12,10 @@ Features
 
 
 ## Requirements
-
   
+- Python 3.x
+- Docker
 
-* Python 3.x
-
-* Docker
-
-  
 
 ## Configuring the account
 
@@ -35,10 +31,9 @@ region_name = 'us-east-2'
 
 ```
 
+
 ## How to run
-
   
-
 ```sh
 
 ./run.sh
@@ -46,15 +41,10 @@ region_name = 'us-east-2'
 ```
 
   
-
 ### Alternatively
-
   
-
 #### Build the container
-
   
-
 ```sh
 
 docker build -t flask-aws .
@@ -62,10 +52,7 @@ docker build -t flask-aws .
 ```
 
   
-
 #### Run the container
-
-  
 
 ```sh
 
@@ -74,8 +61,6 @@ docker run -d -p 5000:5000 flask-aws
 ```
 
 #### Stop and remove the Container
-
-  
 
 ```sh
 
@@ -98,10 +83,7 @@ docker logs <container_ID>
 ```
 
   
-
 ## APIs
-
-  
 
 * GET **/awshealth**  *retrieve the list of ec2 instances with status and type*
 
@@ -127,9 +109,8 @@ Response Sample
 
 Links
 -----
-
-* Website: https://github.com/cibinmathew/awshealth
-* Documentation: TODO
-* Docker: https://docs.docker.com/engine/reference/commandline/docker
-* Code: hhttps://github.com/cibinmathew/awshealth
-* Issue tracker: https://github.com/cibinmathew/awshealth/issues
+- Website: https://github.com/cibinmathew/awshealth
+- Documentation: TODO
+- Docker: https://docs.docker.com/engine/reference/commandline/docker
+- Code: hhttps://github.com/cibinmathew/awshealth
+- Issue tracker: https://github.com/cibinmathew/awshealth/issues

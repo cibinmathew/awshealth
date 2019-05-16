@@ -19,7 +19,8 @@ def hello_world():
                            aws_access_key_id=AWS_ACCESS_KEY_ID,
                            aws_secret_access_key=AWS_SECRET_ACCESS_KEY
                            )
-    except Exception as e:
+    except Exception as error:
+        print(str(error))
         return jsonify({'Error': "Unexpected Error occured"}), 500
 
     instances = ec2.describe_instances()
