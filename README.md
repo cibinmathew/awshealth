@@ -1,21 +1,16 @@
-
-  
-
 # AWS EC2 Get status
-
 
 Features
 --------
 
-- Get list of EC2 instances and running status.
-- Configurable support for ``AWS_ACCESS_KEY_ID`` and ``AWS_SECRET_ACCESS_KEY`` environment variables and region.
+  - Get list of EC2 instances and running status.
+  - Configurable support for ``AWS_ACCESS_KEY_ID`` and ``AWS_SECRET_ACCESS_KEY`` environment variables and region.
 
 
 ## Requirements
   
-- Python 3.x
-- Docker
-
+  - Python 3.x
+  - Docker
 
 ## Configuring the account
 
@@ -112,5 +107,5 @@ Links
 - Website: https://github.com/cibinmathew/awshealth
 - Documentation: TODO
 - Docker: https://docs.docker.com/engine/reference/commandline/docker
-- Code: hhttps://github.com/cibinmathew/awshealth
+- Code: https://github.com/cibinmathew/awshealth
 - Issue tracker: https://github.com/cibinmathew/awshealth/issues
