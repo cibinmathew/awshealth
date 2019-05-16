@@ -6,7 +6,6 @@ Features
   - Get list of EC2 instances and running status of a particular AWS region.
   - Configurable support for ``AWS_ACCESS_KEY_ID`` and ``AWS_SECRET_ACCESS_KEY`` environment variables and region.
 
-
 ## Requirements
   
   - Python 3.x
@@ -26,7 +25,6 @@ region_name = 'us-east-2'
 
 ```
 
-
 ## How to run
   
 ```sh
@@ -35,7 +33,6 @@ $ ./run.sh
 
 ```
 
-  
 ### Alternatively
   
 #### Build the container
@@ -46,7 +43,6 @@ docker build -t flask-aws .
 
 ```
 
-  
 #### Run the container
 
 ```sh
@@ -75,8 +71,7 @@ docker logs <container_ID>
 
 ```
 
-  
-## APIs
+  ## APIs
 
 * GET **/awshealth**  *retrieve the list of ec2 instances with status and type*
 
@@ -98,7 +93,6 @@ Sample response
 ]
 
 ```
-
 
 Links
 -----
