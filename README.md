@@ -3,7 +3,13 @@
 
 # AWS EC2 Get status
 
-  
+
+Features
+--------
+
+- Get list of EC2 instances and running status.
+- Configurable support for ``AWS_ACCESS_KEY_ID`` and ``AWS_SECRET_ACCESS_KEY`` environment variables and region.
+
 
 ## Requirements
 
@@ -15,7 +21,7 @@
 
   
 
-## User Configurations
+## Configuring the account
 
 Change the below settings in *main.py*
 
@@ -35,7 +41,7 @@ region_name = 'us-east-2'
 
 ```sh
 
-$ ./run.sh
+./run.sh
 
 ```
 
@@ -45,41 +51,41 @@ $ ./run.sh
 
   
 
-#### build the container
+#### Build the container
 
   
 
 ```sh
 
-$ docker build -t flask-aws .
+docker build -t flask-aws .
 
 ```
 
   
 
-#### Run the Docker Container
+#### Run the container
 
   
 
 ```sh
 
-$ docker run -d -p 5000:5000 flask-aws
+docker run -d -p 5000:5000 flask-aws
 
 ```
 
-#### Stop and remove the Docker Container
+#### Stop and remove the Container
 
   
 
 ```sh
 
-$ # list of all active and inactive containers
+# list of all active and inactive containers
 
-$ docker container ls -a
+docker container ls -a
 
-$ docker stop <container_ID>
+docker stop <container_ID>
 
-$ docker container rm <container_ID>
+docker container rm <container_ID>
 
 ```
 
@@ -87,7 +93,7 @@ $ docker container rm <container_ID>
 
 ```sh
 
-$ docker logs <container_ID>
+docker logs <container_ID>
 
 ```
 
@@ -99,8 +105,11 @@ $ docker logs <container_ID>
 
 * GET **/awshealth**  *retrieve the list of ec2 instances with status and type*
 
-  
+Example
 
+```sh
+curl <base_url>/awshealth
+```
 Response Sample
 
 ```json
@@ -114,3 +123,13 @@ Response Sample
 ]
 
 ```
+
+
+Links
+-----
+
+* Website: https://github.com/cibinmathew/awshealth
+* Documentation: TODO
+* Docker: https://docs.docker.com/engine/reference/commandline/docker
+* Code: hhttps://github.com/cibinmathew/awshealth
+* Issue tracker: https://github.com/cibinmathew/awshealth/issues
