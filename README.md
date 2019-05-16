@@ -3,7 +3,7 @@
 Features
 --------
 
-  - Get list of EC2 instances and running status.
+  - Get list of EC2 instances and running status of a particular AWS region.
   - Configurable support for ``AWS_ACCESS_KEY_ID`` and ``AWS_SECRET_ACCESS_KEY`` environment variables and region.
 
 
@@ -31,7 +31,7 @@ region_name = 'us-east-2'
   
 ```sh
 
-./run.sh
+$ ./run.sh
 
 ```
 
@@ -59,9 +59,7 @@ docker run -d -p 5000:5000 flask-aws
 
 ```sh
 
-# list of all active and inactive containers
-
-docker container ls -a
+docker container ls -a  # list of all active and inactive containers
 
 docker stop <container_ID>
 
@@ -87,7 +85,7 @@ Example
 ```sh
 curl <base_url>/awshealth
 ```
-Response Sample
+Sample response
 
 ```json
 
