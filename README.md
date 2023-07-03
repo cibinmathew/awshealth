@@ -1,4 +1,4 @@
-# AWS EC2 Get status
+# AWS EC2 health
 
 Features
 --------
