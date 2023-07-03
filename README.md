@@ -3,7 +3,7 @@
 Features
 --------
 
-  - Get list of EC2 instances and running status of a particular AWS region.
+  - Get list of EC2 instances with running status of a particular AWS region.
   - Configurable support for ``AWS_ACCESS_KEY_ID`` and ``AWS_SECRET_ACCESS_KEY`` environment variables and region.
 
 ## Requirements
@@ -97,7 +97,6 @@ Sample response
 Links
 -----
 - Website: https://github.com/cibinmathew/awshealth
-- Documentation: TODO
 - Docker: https://docs.docker.com/engine/reference/commandline/docker
 - Code: https://github.com/cibinmathew/awshealth
 - Issue tracker: https://github.com/cibinmathew/awshealth/issues
